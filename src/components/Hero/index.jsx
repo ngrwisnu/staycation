@@ -1,12 +1,13 @@
 import Button from "components/Button";
 import React from "react";
+import FormatNumber from "utils/FormatNumber";
 
 // import assets
 
 const Hero = (props) => {
-  function showDestination() {
-    window.scrollTo();
-  }
+  // function showDestination() {
+  //   window.scrollTo();
+  // }
 
   return (
     <section
@@ -24,7 +25,11 @@ const Hero = (props) => {
               We provide what you need to enjoy your vacation with your family.
               This is the time to make another memorable moments
             </p>
-            <Button className="btn mt-3" isPrimaryBtn onClick={showDestination}>
+            <Button
+              className="btn mt-3"
+              isPrimaryBtn
+              onClick={() => props.sendRef(props.targetRef.current)}
+            >
               Discover destination
             </Button>
           </div>
@@ -32,7 +37,7 @@ const Hero = (props) => {
           <div className="social-proof position-absolute">
             {Object.entries(props.dataSosialProof).map(([key, val]) => (
               <div key={key} className="social-proof__item">
-                <h5>{val}</h5>
+                <h5>{FormatNumber(val)}</h5>
                 <h6 className="mb-0">{key}</h6>
               </div>
             ))}

@@ -1,16 +1,34 @@
 import Header from "components/Header";
 import Hero from "components/Hero";
+import MostChosen from "components/MostChosen";
 import data from "data";
-import React, { Component, Fragment } from "react";
+import React, { Fragment, useRef } from "react";
 
-export default class LandingPage extends Component {
-  render() {
-    const dataSosialProof = data.hero;
-    return (
-      <Fragment>
-        <Header {...this.props} />
-        <Hero dataSosialProof={dataSosialProof} />
-      </Fragment>
-    );
-  }
-}
+const LandingPage = () => {
+  const dataSosialProof = data.hero;
+  const linkRef = useRef(null);
+
+  const sendRef = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <Fragment>
+      <Header />
+      <Hero
+        sendRef={sendRef}
+        targetRef={linkRef}
+        dataSosialProof={dataSosialProof}
+      />
+      <main>
+        <MostChosen targetRef={linkRef} mostChosen={data.mostChosen} />
+      </main>
+    </Fragment>
+  );
+};
+
+export default LandingPage;

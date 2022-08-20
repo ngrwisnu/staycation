@@ -63,6 +63,16 @@ body {
   height: 39px;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 6rem 0;
+  min-height: 2000px;
+}
 // Header
 header {
   border-bottom: 1px solid $gray-200;
@@ -148,5 +158,65 @@ header {
   }
 }
 // end of Hero
+
+// Most Chosen
+.card {
+  border: none;
+
+  .card__image {
+    height: 450px;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      border-radius: inherit;
+      height: 100%;
+      width: 100%;
+      transform: scale(1);
+      transition: all 500ms ease-in-out;
+    }
+  }
+
+  .card-body,
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body {
+    gap: 0.5rem;
+    padding: 2rem 1rem 1rem;
+  }
+
+  h4 {
+    font-weight: 600;
+
+    span {
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+
+  .description {
+    gap: 0.5em;
+  }
+
+  h4,
+  .description span:nth-child(1) {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+// end of Most Chosen
 
 // end of My CSS

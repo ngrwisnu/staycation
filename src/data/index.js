@@ -1,15 +1,15 @@
 const data = {
   hero: {
-    travelers: 11000,
-    landscapes: 4000,
+    travelers: 8400,
+    landscapes: 4780,
     cities: 846,
   },
-  mostPicked: [
+  mostChosen: [
     {
       _id: "mpckd1",
       name: "Longe Paradise Resort",
       type: "Hotel",
-      imageUrl: "/src/assets/images/hotel-1.jpg",
+      imageUrl: "/images/hotel-1.jpg",
       country: "Indonesia",
       city: "Kuta, Bali",
       price: "324.000",
@@ -19,7 +19,7 @@ const data = {
       _id: "mpckd2",
       name: "Family Nature Farm",
       type: "Camping",
-      imageUrl: "/src/assets/images/camp-4.jpg",
+      imageUrl: "/images/camp-4.jpg",
       country: "Indonesia",
       city: "Bandung, West Java",
       price: "124.000",
@@ -29,7 +29,7 @@ const data = {
       _id: "mpckd3",
       name: "Farm Yard",
       type: "House",
-      imageUrl: "/src/assets/images/house-2.jpg",
+      imageUrl: "/images/house-2.jpg",
       country: "Indonesia",
       city: "Bandung, West Java",
       price: "188.000",
@@ -44,7 +44,7 @@ const data = {
         {
           _id: "ctgr1htl",
           name: "Longe Paradise Resort",
-          imageUrl: "/src/assets/images/hotel-1.jpg",
+          imageUrl: "/images/hotel-1.jpg",
           country: "Indonesia",
           city: "Kuta, Bali",
           price: "324.000",
@@ -54,7 +54,7 @@ const data = {
         {
           _id: "ctgr2ht2",
           name: "Long Longe Hotel",
-          imageUrl: "/src/assets/images/hotel-3.jpg",
+          imageUrl: "/images/hotel-3.jpg",
           country: "Indonesia",
           city: "Lombok, NTB",
           price: "279.000",
@@ -64,7 +64,7 @@ const data = {
         {
           _id: "ctgr3ht3",
           name: "Simplive Hotel",
-          imageUrl: "/src/assets/images/hotel-2.jpg",
+          imageUrl: "/images/hotel-2.jpg",
           country: "Indonesia",
           city: "Malang, East Java",
           price: "298.000",
@@ -74,7 +74,7 @@ const data = {
         {
           _id: "ctgr4ht4",
           name: "Coco Garden Hotel",
-          imageUrl: "/src/assets/images/hotel-4.jpg",
+          imageUrl: "/images/hotel-4.jpg",
           country: "Indonesia",
           city: "Lombok, NTB",
           price: "299.000",
@@ -90,7 +90,7 @@ const data = {
         {
           _id: "ctgr1hs1",
           name: "Family House",
-          imageUrl: "/src/assets/images/house-1.jpg",
+          imageUrl: "/images/house-1.jpg",
           country: "Indonesia",
           city: "Bandung, West Java",
           price: "216.000",
@@ -100,7 +100,7 @@ const data = {
         {
           _id: "ctgr2hs2",
           name: "Old Yard House",
-          imageUrl: "/src/assets/images/house-3.jpg",
+          imageUrl: "/images/house-3.jpg",
           country: "Indonesia",
           city: "Bandung, West Java",
           price: "199.000",
@@ -110,7 +110,7 @@ const data = {
         {
           _id: "ctgr3hs3",
           name: "One Night Owl",
-          imageUrl: "/src/assets/images/house-4.jpg",
+          imageUrl: "/images/house-4.jpg",
           country: "Indonesia",
           city: "Jakarta",
           price: "228.000",
@@ -120,7 +120,7 @@ const data = {
         {
           _id: "ctgr4hs4",
           name: "Farm Yard",
-          imageUrl: "/src/assets/images/house-2.jpg",
+          imageUrl: "/images/house-2.jpg",
           country: "Indonesia",
           city: "Bandung, West Java",
           price: "188.000",
@@ -136,7 +136,7 @@ const data = {
         {
           _id: "ctgr1cp1",
           name: "Blue Lake",
-          imageUrl: "/src/assets/images/camp-1.jpg",
+          imageUrl: "/images/camp-1.jpg",
           country: "Indonesia",
           city: "Bromo, East Java",
           price: "118.000",
@@ -146,7 +146,7 @@ const data = {
         {
           _id: "ctgr2cp2",
           name: "Woody Camp",
-          imageUrl: "/src/assets/images/camp-2.jpg",
+          imageUrl: "/images/camp-2.jpg",
           country: "Indonesia",
           city: "Bandung, West Java",
           price: "287.000",
@@ -156,7 +156,7 @@ const data = {
         {
           _id: "ctgr3cp3",
           name: "Forestline Complex",
-          imageUrl: "/src/assets/images/camp-3.jpg",
+          imageUrl: "/images/camp-3.jpg",
           country: "Indonesia",
           city: "Malang, East Java",
           price: "226.000",
@@ -166,7 +166,7 @@ const data = {
         {
           _id: "ctgr4cp4",
           name: "Family Nature Farm",
-          imageUrl: "/src/assets/images/camp-4.jpg",
+          imageUrl: "/images/camp-4.jpg",
           country: "Indonesia",
           city: "Bandung, West Java",
           price: "124.000",
