@@ -38,7 +38,7 @@ const data = {
   ],
   categories: [
     {
-      _id: "ctgres1ht",
+      _id: "hotel",
       name: "Hotel",
       items: [
         {
@@ -84,7 +84,7 @@ const data = {
       ],
     },
     {
-      _id: "ctgres2hs",
+      _id: "house",
       name: "House with Backyard",
       items: [
         {
@@ -130,7 +130,7 @@ const data = {
       ],
     },
     {
-      _id: "ctgres3cp",
+      _id: "camping",
       name: "Camping",
       items: [
         {
@@ -141,7 +141,7 @@ const data = {
           city: "Bromo, East Java",
           price: "118.000",
           unit: "night",
-          isPopular: true,
+          isPopular: false,
         },
         {
           _id: "ctgr2cp2",

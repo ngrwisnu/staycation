@@ -2,7 +2,7 @@ import React from "react";
 
 // import MostChosen1 from "assets/images/hotel-1.jpg";
 
-const Card = ({ image, name, price, city, unit }) => {
+const Card = ({ image, name, price, city, unit, isPopular }) => {
   return (
     <div className="card">
       <div className="card__image">
@@ -20,6 +20,11 @@ const Card = ({ image, name, price, city, unit }) => {
           <span>{name}</span>
           <span>{city}</span>
         </div>
+        {isPopular ? (
+          <span className="badge text-bg-primary">Popular choice</span>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

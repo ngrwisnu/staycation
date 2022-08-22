@@ -1,3 +1,4 @@
+import Categories from "components/Categories";
 import Header from "components/Header";
 import Hero from "components/Hero";
 import MostChosen from "components/MostChosen";
@@ -26,6 +27,7 @@ const LandingPage = () => {
       />
       <main>
         <MostChosen targetRef={linkRef} mostChosen={data.mostChosen} />
+        <Categories categoryData={data.categories} />
       </main>
     </Fragment>
   );
