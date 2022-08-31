@@ -74,178 +74,19 @@ section {
   padding: 6rem 0;
 }
 // Header
-header {
-  border-bottom: 1px solid $gray-200;
-  width: 100%;
-  position: relative;
-
-  .navbar {
-    height: 80px;
-    background-color: #ffffff;
-
-    ul.navbar-nav {
-      li.nav-item {
-        &.active {
-          a {
-            color: $main-purple !important;
-            font-weight: 500;
-          }
-        }
-        a {
-          &.nav-link {
-            color: $body;
-            padding: 0 1rem;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+@import "../../components/Header/header";
 // end of Header
 
 // Hero
-#hero {
-  min-height: 75%;
-  display: flex;
-  background-color: rgb(52, 52, 52);
-  color: white;
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .content {
-    max-width: 490px;
-    text-align: center;
-  }
-
-  .social-proof {
-    bottom: -10%;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 0;
-    border-radius: 0.375rem;
-    box-shadow: $box-shadow-custom;
-    background-color: white;
-
-    .social-proof__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 4rem;
-      color: $body;
-      border-right: 1px solid $gray-300;
-
-      &:nth-child(3) {
-        border-right: none;
-      }
-    }
-  }
-
-  h1 {
-    font-weight: 300;
-    line-height: 135%;
-
-    span {
-      font-weight: 600;
-    }
-  }
-}
+@import "../../components/Hero/hero";
 // end of Hero
 
-// Most Chosen
-.card {
-  border: none;
-
-  .card__image {
-    height: 450px;
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-
-    img {
-      object-fit: cover;
-      border-radius: inherit;
-      height: 100%;
-      width: 100%;
-      transform: scale(1);
-      transition: all 500ms ease-in-out;
-    }
-  }
-
-  .card-body,
-  .description {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-body {
-    gap: 0.5rem;
-    padding: 2rem 1rem 1rem;
-
-    .badge {
-      width: max-content;
-      padding: 0.5rem 1rem;
-      font-weight: 500;
-    }
-  }
-
-  h4 {
-    font-weight: 600;
-
-    span {
-      font-size: 0.875rem;
-      font-weight: 400;
-    }
-  }
-
-  .description {
-    gap: 0.25em;
-  }
-
-  h4,
-  .description span:nth-child(1) {
-    font-size: 1.25rem;
-    margin-bottom: 0;
-  }
-
-  &:hover {
-    cursor: pointer;
-
-    img {
-      transform: scale(1.1);
-    }
-  }
-}
-// end of Most Chosen
+// Most Chosen Card
+@import "../../components/Card/card";
+// end of Most Chosen Card
 
 // Category
-#category {
-  ul {
-    li {
-      button {
-        color: $gray-600;
-
-        &.active {
-          background-color: $purple-surface;
-          color: $main-purple;
-        }
-      }
-    }
-  }
-
-  .card {
-    .card__image {
-      height: 180px;
-    }
-  }
-}
+@import "../../components/Categories/categories";
 // end of Category
 
 // end of My CSS

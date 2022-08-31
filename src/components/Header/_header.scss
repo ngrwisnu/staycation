@@ -1,0 +1,30 @@
+header {
+  border-bottom: 1px solid $gray-200;
+  width: 100%;
+  position: relative;
+
+  .navbar {
+    height: 80px;
+    background-color: #ffffff;
+
+    ul.navbar-nav {
+      li.nav-item {
+        &.active {
+          a {
+            color: $main-purple !important;
+            font-weight: 500;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $body;
+            padding: 0 1rem;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

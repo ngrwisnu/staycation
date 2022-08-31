@@ -39,6 +39,7 @@ const Hero = (props) => {
               <div key={key} className="social-proof__item">
                 <h5>{FormatNumber(val)}</h5>
                 <h6 className="mb-0">{key}</h6>
+                {key === "travelers" && <span>/ year</span>}
               </div>
             ))}
           </div>
