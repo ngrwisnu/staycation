@@ -1,4 +1,4 @@
-import Card from "components/Card";
+import CardProduct from "components/CardProduct";
 import React from "react";
 
 const MostChosen = (props) => {
@@ -9,7 +9,7 @@ const MostChosen = (props) => {
         {props.mostChosen.map((item, index) => {
           return (
             <div key={index} className="col-4">
-              <Card
+              <CardProduct
                 image={item.imageUrl}
                 name={item.name}
                 price={item.price}

@@ -2,7 +2,7 @@ import React from "react";
 
 // import MostChosen1 from "assets/images/hotel-1.jpg";
 
-const Card = ({ image, name, price, city, unit, isPopular }) => {
+const CardProduct = ({ image, name, price, city, unit, isPopular }) => {
   return (
     <div className="card">
       <div className="card__image">
@@ -30,4 +30,4 @@ const Card = ({ image, name, price, city, unit, isPopular }) => {
   );
 };
 
-export default Card;
+export default CardProduct;

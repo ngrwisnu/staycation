@@ -1,4 +1,4 @@
-import Card from "components/Card";
+import CardProduct from "components/CardProduct";
 import React from "react";
 
 const TabsContent = ({ categoryData, isDefault }) => {
@@ -20,7 +20,7 @@ const TabsContent = ({ categoryData, isDefault }) => {
               {item.items.map((content) => {
                 return (
                   <div className="col-3" key={content._id}>
-                    <Card
+                    <CardProduct
                       image={content.imageUrl}
                       name={content.name}
                       price={content.price}

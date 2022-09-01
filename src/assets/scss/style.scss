@@ -53,6 +53,10 @@
 // My CSS
 body {
   font-family: Poppins, sans-serif;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .btn-orange {
@@ -64,14 +68,14 @@ body {
   height: 39px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
 section {
   padding: 6rem 0;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
 }
 // Header
 @import "../../components/Header/header";
@@ -82,11 +86,15 @@ section {
 // end of Hero
 
 // Most Chosen Card
-@import "../../components/Card/card";
+@import "../../components/CardProduct/card-product";
 // end of Most Chosen Card
 
 // Category
 @import "../../components/Categories/categories";
 // end of Category
+
+// Testimonials
+@import "../../components/CardReview/card-review";
+// end of Testimonials
 
 // end of My CSS
