@@ -39,7 +39,12 @@ const Header = (props) => {
                 </Button>
               </li>
               <li className={`nav-item ${getNavLinkclassName("/stories")}`}>
-                <Button className="nav-link" href="/stories" type="link">
+                <Button
+                  isExternal
+                  className="nav-link"
+                  href="#testimonials"
+                  type="link"
+                >
                   Stories
                 </Button>
               </li>

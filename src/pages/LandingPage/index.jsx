@@ -1,4 +1,5 @@
 import Categories from "components/Categories";
+import Footer from "components/Footer";
 import Header from "components/Header";
 import Hero from "components/Hero";
 import MostChosen from "components/MostChosen";
@@ -31,6 +32,7 @@ const LandingPage = () => {
         <Categories categoryData={data.categories} />
         <Testimonials storiesData={data.stories} />
       </main>
+      <Footer />
     </Fragment>
   );
 };

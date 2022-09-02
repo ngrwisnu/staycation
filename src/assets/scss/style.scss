@@ -50,6 +50,10 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+// import google font
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@500;600;700&family=Nunito:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+// end of import font
+
 // My CSS
 body {
   font-family: Poppins, sans-serif;
@@ -96,5 +100,8 @@ section {
 // Testimonials
 @import "../../components/CardReview/card-review";
 // end of Testimonials
+
+// Footer
+@import "../../components/Footer/footer"; // end of Footer
 
 // end of My CSS
