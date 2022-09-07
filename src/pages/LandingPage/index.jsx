@@ -4,7 +4,7 @@ import Header from "components/Header";
 import Hero from "components/Hero";
 import MostChosen from "components/MostChosen";
 import Testimonials from "components/Testimonials";
-import data from "data";
+import data from "data/landingPageData";
 import React, { Fragment, useRef } from "react";
 
 const LandingPage = () => {

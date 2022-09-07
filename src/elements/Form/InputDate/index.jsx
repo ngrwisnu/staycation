@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 import formatDate from "elements/FormatDate";
 import CalendarIcon from "assets/icons/calendar.svg";
 
+// import scss
+import "./_input-date.scss";
+
 // import skeleton and themes from react date range
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file

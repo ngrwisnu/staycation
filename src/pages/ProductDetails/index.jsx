@@ -1,8 +1,9 @@
-import InputDate from "elements/InputDate";
-import InputGuest from "elements/InputGuest";
+import Breadcrumb from "elements/Breadcrump";
+import InputDate from "elements/Form/InputDate";
+import InputGuest from "elements/Form/InputGuest";
 import React, { Component, Fragment } from "react";
 
-class ProductDetail extends Component {
+class ProductDetails extends Component {
   state = {
     value: {
       startDate: new Date(),
@@ -16,6 +17,11 @@ class ProductDetail extends Component {
   };
 
   render() {
+    const breadcrumbList = [
+      { pageTitle: "Home", pageHref: "/" },
+      { pageTitle: "House Details", pageHref: "" },
+    ];
+
     return (
       <Fragment>
         <form action="">
@@ -28,9 +34,10 @@ class ProductDetail extends Component {
             placeholder="Test"
           />
         </form>
+        <Breadcrumb breadcrumbData={breadcrumbList} />
       </Fragment>
     );
   }
 }
 
-export default ProductDetail;
+export default ProductDetails;

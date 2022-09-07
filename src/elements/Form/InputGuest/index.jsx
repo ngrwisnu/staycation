@@ -1,5 +1,7 @@
 import React from "react";
 
+import ".";
+
 const InputGuest = () => {
   const changeHandler = (e) => {
     console.log(e.target.value);
