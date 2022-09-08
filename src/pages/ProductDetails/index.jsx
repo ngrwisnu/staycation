@@ -1,7 +1,11 @@
-import Breadcrumb from "elements/Breadcrump";
+import Footer from "components/Footer";
+import Header from "components/Header";
 import InputDate from "elements/Form/InputDate";
 import InputGuest from "elements/Form/InputGuest";
+import { Description, Title } from "elements/ProductDetails";
 import React, { Component, Fragment } from "react";
+
+import data from "../../data/itemDetailsData.json";
 
 class ProductDetails extends Component {
   state = {
@@ -12,18 +16,21 @@ class ProductDetails extends Component {
     },
   };
 
+  componentDidMount() {
+    window.title = "Product Details";
+    window.scrollTo(0, 0);
+  }
+
   changeHandler = (e) => {
     this.setState({ value: e.target.value });
   };
 
   render() {
-    const breadcrumbList = [
-      { pageTitle: "Home", pageHref: "/" },
-      { pageTitle: "House Details", pageHref: "" },
-    ];
-
     return (
       <Fragment>
+        <Header />
+        <Title data={data} />
+        <Description data={data} />
         <form action="">
           <InputGuest />
           <InputDate
@@ -34,7 +41,7 @@ class ProductDetails extends Component {
             placeholder="Test"
           />
         </form>
-        <Breadcrumb breadcrumbData={breadcrumbList} />
+        <Footer />
       </Fragment>
     );
   }

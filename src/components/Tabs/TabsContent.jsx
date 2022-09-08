@@ -21,6 +21,7 @@ const TabsContent = ({ categoryData, isDefault }) => {
                 return (
                   <div className="col-3" key={content._id}>
                     <CardProduct
+                      id={content._id}
                       image={content.imageUrl}
                       name={content.name}
                       price={content.price}

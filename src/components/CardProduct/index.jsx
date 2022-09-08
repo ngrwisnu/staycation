@@ -1,8 +1,9 @@
+import Button from "components/Button";
 import React from "react";
 
 // import MostChosen1 from "assets/images/hotel-1.jpg";
 
-const CardProduct = ({ image, name, price, city, unit, isPopular }) => {
+const CardProduct = ({ id, image, name, price, city, unit, isPopular }) => {
   return (
     <div className="card">
       <div className="card__image">
@@ -25,6 +26,9 @@ const CardProduct = ({ image, name, price, city, unit, isPopular }) => {
         ) : (
           ""
         )}
+      </div>
+      <div className="link-wrapper">
+        <Button type="link" href={`/properties/${id}`} />
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ const MostChosen = (props) => {
           return (
             <div key={index} className="col-4">
               <CardProduct
+                id={item._id}
                 image={item.imageUrl}
                 name={item.name}
                 price={item.price}
