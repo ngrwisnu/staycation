@@ -2,7 +2,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import InputDate from "elements/Form/InputDate";
 import InputGuest from "elements/Form/InputGuest";
-import { Description, Title } from "elements/ProductDetails";
+import { Description, ImagePreview, Title } from "elements/ProductDetails";
 import React, { Component, Fragment } from "react";
 
 import data from "../../data/itemDetailsData.json";
@@ -31,6 +31,7 @@ class ProductDetails extends Component {
         <Header />
         <Title data={data} />
         <Description data={data} />
+        <ImagePreview data={data} />
         <form action="">
           <InputGuest />
           <InputDate

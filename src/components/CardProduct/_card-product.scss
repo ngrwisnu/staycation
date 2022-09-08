@@ -1,7 +1,6 @@
 .card {
   border: none;
   position: relative;
-  border: 1px solid black;
 
   .card__image {
     height: 450px;
@@ -76,7 +75,6 @@
       top: 0;
       bottom: 0;
       z-index: 999;
-      background-color: rgba($color: #000000, $alpha: 0.2);
     }
   }
 }
