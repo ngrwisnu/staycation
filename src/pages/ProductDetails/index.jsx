@@ -30,8 +30,8 @@ class ProductDetails extends Component {
       <Fragment>
         <Header />
         <Title data={data} />
-        <Description data={data} />
         <ImagePreview data={data} />
+        <Description data={data} />
         <form action="">
           <InputGuest />
           <InputDate

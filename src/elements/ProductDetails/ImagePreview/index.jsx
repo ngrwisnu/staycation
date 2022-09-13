@@ -3,7 +3,6 @@ import React from "react";
 import "./_image-preview.scss";
 
 const ImagePreview = ({ data }) => {
-  console.log(data.imageUrls);
   return (
     <div className="container image-preview">
       <div className="container-grid sm">

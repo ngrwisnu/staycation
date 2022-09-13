@@ -1,10 +1,10 @@
 import React from "react";
 
-const Title = ({ data }) => {
-  console.log(data);
+import "./_title.scss";
 
+const Title = ({ data }) => {
   return (
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto text-center product-title">
       <h2>{data.name}</h2>
       <span>{data.city}</span>
     </div>

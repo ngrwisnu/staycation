@@ -22,55 +22,55 @@
   "unit": "night",
   "isPopular": true,
   "hasBackyard": false,
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros in cursus turpis. Pulvinar elementum integer enim neque. Mi eget mauris pharetra et.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Id aliquet lectus proin nibh. Elit pellentesque habitant morbi tristique. Magna ac placerat vestibulum lectus.",
+  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros in cursus turpis. Pulvinar elementum integer enim neque. Mi eget mauris pharetra et.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Id aliquet lectus proin nibh. Elit pellentesque habitant morbi tristique. Magna ac placerat vestibulum lectus.</p>",
   "features": [
     {
       "_id": "fnf0201feats",
       "qty": "3",
-      "name": "bedroom",
-      "imageUrl": "assets/icons/single-bed-icon.svg"
+      "name": "Bedroom",
+      "imageUrl": "/images/icons/single-bed-icon.svg"
     },
     {
       "_id": "fnf0202feats",
       "qty": "1",
       "name": "Living room",
-      "imageUrl": "assets/icons/lamp-icon.svg"
+      "imageUrl": "/images/icons/lamp-icon.svg"
     },
     {
       "_id": "fnf0203feats",
       "qty": "2",
       "name": "Bathroom",
-      "imageUrl": "assets/icons/bath-icon.svg"
+      "imageUrl": "/images/icons/bath-icon.svg"
     },
     {
       "_id": "fnf0204feats",
       "qty": "1",
       "name": "Kitchen",
-      "imageUrl": "assets/icons/dining-table.svg"
+      "imageUrl": "/images/icons/dining-table.svg"
     },
     {
       "_id": "fnf0205feats",
       "qty": "10",
       "name": "Wifi",
-      "imageUrl": "assets/icons/wifi-icon.svg"
+      "imageUrl": "/images/icons/wifi-icon.svg"
     },
     {
       "_id": "fnf0206feats",
       "qty": "2",
       "name": "AC",
-      "imageUrl": "assets/icons/ac-icon.svg"
+      "imageUrl": "/images/icons/ac-icon.svg"
     },
     {
       "_id": "fnf0207feats",
       "qty": "2",
       "name": "Refrigerator",
-      "imageUrl": "assets/icons/refrigerator-icon.svg"
+      "imageUrl": "/images/icons/refrigerator-icon.svg"
     },
     {
       "_id": "fnf0208feats",
       "qty": "1",
       "name": "TV",
-      "imageUrl": "assets/icons/tv-icon.svg"
+      "imageUrl": "/images/icons/tv-icon.svg"
     }
   ],
   "activities": [
