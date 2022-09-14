@@ -105,6 +105,24 @@ section {
 // Footer
 @import "../../components/Footer/footer"; // end of Footer
 
-// Product Page
+// Product Details Page
+#product-details {
+  margin-top: 2.25rem;
+
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: $main-purple;
+  }
+
+  form {
+    width: 100%;
+
+    label {
+      margin-bottom: 5px;
+    }
+  }
+}
+// end of Product Details Page
 
 // end of My CSS

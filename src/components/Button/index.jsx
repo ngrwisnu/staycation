@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+import "./index.scss";
+
 const Button = (props) => {
   const className = [props.className];
   props.isPrimaryBtn && className.push("btn-orange");

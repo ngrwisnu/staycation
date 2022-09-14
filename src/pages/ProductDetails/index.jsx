@@ -1,7 +1,6 @@
+import BookingForm from "components/BookingForm";
 import Footer from "components/Footer";
 import Header from "components/Header";
-import InputDate from "elements/Form/InputDate";
-import InputGuest from "elements/Form/InputGuest";
 import { Description, ImagePreview, Title } from "elements/ProductDetails";
 import React, { Component, Fragment } from "react";
 
@@ -31,17 +30,12 @@ class ProductDetails extends Component {
         <Header />
         <Title data={data} />
         <ImagePreview data={data} />
-        <Description data={data} />
-        <form action="">
-          <InputGuest />
-          <InputDate
-            max={30}
-            onChange={this.changeHandler}
-            name="value"
-            value={this.state.value}
-            placeholder="Test"
-          />
-        </form>
+        <main id="product-details" className="container d-flex">
+          <Description data={data} />
+          <form action="">
+            <BookingForm itemDetails={data} />
+          </form>
+        </main>
         <Footer />
       </Fragment>
     );

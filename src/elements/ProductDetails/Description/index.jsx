@@ -5,8 +5,8 @@ import "./_description-features.scss";
 
 const Description = ({ data }) => {
   return (
-    <main className="detail-description container d-flex">
-      <div className="description col-7">
+    <div className="detail-description col-7">
+      <div className="description">
         <div className="about-place">
           <h4>About the place</h4>
           {parse(`${data.description}`)}
@@ -39,8 +39,7 @@ const Description = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="">Booking Page</div>
-    </main>
+    </div>
   );
 };
 
