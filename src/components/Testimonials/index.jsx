@@ -1,6 +1,8 @@
 import CardReview from "components/CardReview";
 import React from "react";
 
+import "./_testimonials.scss";
+
 const Testimonials = ({ storiesData }) => {
   return (
     <section id="testimonials" className="container-fluid">

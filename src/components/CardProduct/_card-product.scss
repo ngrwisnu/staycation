@@ -8,6 +8,10 @@
     border-radius: 1rem;
     overflow: hidden;
 
+    &.mini-image {
+      height: 180px;
+    }
+
     img {
       object-fit: cover;
       border-radius: inherit;

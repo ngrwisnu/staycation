@@ -3,10 +3,20 @@ import React from "react";
 
 // import MostChosen1 from "assets/images/hotel-1.jpg";
 
-const CardProduct = ({ id, image, name, price, city, unit, isPopular }) => {
+const CardProduct = ({
+  id,
+  image,
+  name,
+  price,
+  city,
+  unit,
+  isPopular,
+  isActivities,
+  isMini,
+}) => {
   return (
     <div className="card">
-      <div className="card__image">
+      <div className={`card__image ${isMini && "mini-image"}`}>
         <img
           src={process.env.PUBLIC_URL + image}
           className="card-img-top"
@@ -14,9 +24,14 @@ const CardProduct = ({ id, image, name, price, city, unit, isPopular }) => {
         />
       </div>
       <div className="card-body">
-        <h4>
-          IDR {price} <span>/ {unit}</span>
-        </h4>
+        {isActivities ? (
+          ""
+        ) : (
+          <h4>
+            IDR {price} <span>/ {unit}</span>
+          </h4>
+        )}
+
         <div className="description">
           <span>{name}</span>
           <span>{city}</span>
@@ -27,9 +42,13 @@ const CardProduct = ({ id, image, name, price, city, unit, isPopular }) => {
           ""
         )}
       </div>
-      <div className="link-wrapper">
-        <Button type="link" href={`/properties/${id}`} />
-      </div>
+      {isActivities ? (
+        ""
+      ) : (
+        <div className="link-wrapper">
+          <Button type="link" href={`/properties/${id}`} />
+        </div>
+      )}
     </div>
   );
 };

@@ -1,16 +1,11 @@
-#testimonials {
-  .testimonials {
-    display: flex;
-    gap: 1.5rem;
-  }
+@import "../../assets/scss/color-variables";
 
-  .card-review {
-    padding: 1rem 1rem 1rem 0.5rem;
-    width: 384px;
-    height: max-content;
-    border: 1px solid $main-purple;
-    border-radius: 1rem;
-  }
+.card-review {
+  padding: 1rem 1rem 1rem 0.5rem;
+  width: 384px;
+  height: max-content;
+  border: 1px solid $main-purple;
+  border-radius: 1rem;
 
   .card-body {
     padding: 0;

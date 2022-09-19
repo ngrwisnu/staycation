@@ -28,6 +28,7 @@ const TabsContent = ({ categoryData, isDefault }) => {
                       city={content.city}
                       unit={content.unit}
                       isPopular={content.isPopular}
+                      isMini
                     />
                   </div>
                 );

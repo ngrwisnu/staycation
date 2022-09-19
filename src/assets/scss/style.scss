@@ -99,7 +99,7 @@ section {
 // end of Category
 
 // Testimonials
-@import "../../components/CardReview/card-review";
+@import "../../components/Testimonials/testimonials";
 // end of Testimonials
 
 // Footer
@@ -121,6 +121,10 @@ section {
     label {
       margin-bottom: 5px;
     }
+  }
+
+  .product-details__activities {
+    margin-top: 52px;
   }
 }
 // end of Product Details Page

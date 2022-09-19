@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./_card-review.scss";
+
 const CardReview = ({ id, rate, content, name, occupation }) => {
   return (
     <div className="card-review">
