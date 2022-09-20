@@ -1,6 +1,7 @@
 import Button from "components/Button";
 import { BookingResume, InputDate, InputGuest } from "elements/Form";
 import React from "react";
+import FormatNumber from "utils/FormatNumber";
 
 import "./_card-booking.scss";
 
@@ -13,7 +14,9 @@ const CardBooking = ({
   return (
     <div className="col-5 card-booking">
       <div className="card-booking__header">
-        <h3 className="card-booking__price">IDR {itemDetails.price}</h3>
+        <h3 className="card-booking__price">
+          IDR {FormatNumber(itemDetails.price)}
+        </h3>
         <span>/ {itemDetails.unit}</span>
       </div>
       <div className="card-booking__guest">
@@ -26,7 +29,7 @@ const CardBooking = ({
           value={dataState.date}
         />
       </div>
-      <BookingResume />
+      <BookingResume itemDetails={itemDetails} duration={dataState.duration} />
       <Button
         className="btn"
         hasShadow
