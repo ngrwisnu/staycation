@@ -10,6 +10,18 @@ const Header = (props) => {
     return location.pathname === path ? "active" : "";
   };
 
+  if (props.isCentered) {
+    return (
+      <header>
+        <nav className="navbar navbar-expand-lg">
+          <div className="container justify-content-center">
+            <Logo />
+          </div>
+        </nav>
+      </header>
+    );
+  }
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg">

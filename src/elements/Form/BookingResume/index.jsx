@@ -2,10 +2,9 @@ import React from "react";
 import FormatNumber from "utils/FormatNumber";
 import "./_booking-resume.scss";
 
-const BookingResume = ({ itemDetails, duration }) => {
-  console.log(typeof FormatNumber(itemDetails.price));
+const BookingResume = ({ price, duration }) => {
   const totalPriceNoTaxes = () => {
-    return FormatNumber(+itemDetails.price * duration);
+    return FormatNumber(+price * duration);
   };
 
   return (
@@ -13,7 +12,7 @@ const BookingResume = ({ itemDetails, duration }) => {
       <div className="booking-resume__details">
         <div className="booking-resume__detail">
           <span>
-            IDR {FormatNumber(itemDetails.price)} x {duration}
+            IDR {FormatNumber(price)} x {duration}
           </span>
           <span>IDR {totalPriceNoTaxes()}</span>
         </div>
