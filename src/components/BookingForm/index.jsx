@@ -32,7 +32,9 @@ export default class BookingForm extends Component {
     if (prevState.data.date !== data.date) {
       const startDate = new Date(data.date.startDate);
       const endDate = new Date(data.date.endDate);
+
       const countDuration = new Date(endDate - startDate).getDate();
+
       this.setState({
         data: {
           ...this.state.data,

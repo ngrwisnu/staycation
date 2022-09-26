@@ -29,7 +29,11 @@ const CardBooking = ({
           value={dataState.date}
         />
       </div>
-      <BookingResume price={itemDetails.price} duration={dataState.duration} />
+      <BookingResume
+        price={itemDetails.price}
+        duration={dataState.duration}
+        endDate={dataState.date.endDate}
+      />
       <Button
         className="btn"
         hasShadow
