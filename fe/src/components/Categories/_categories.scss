@@ -1,0 +1,14 @@
+#category {
+  ul {
+    li {
+      button {
+        color: $gray-600;
+
+        &.active {
+          background-color: $purple-surface;
+          color: $main-purple;
+        }
+      }
+    }
+  }
+}

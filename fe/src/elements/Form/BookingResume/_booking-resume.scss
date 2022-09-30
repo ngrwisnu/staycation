@@ -1,0 +1,40 @@
+@import "../../../assets/scss/color-variables";
+
+.booking-resume {
+  padding: 0.5rem 0;
+
+  .booking-resume__details {
+    border-bottom: 1px solid $gray-500;
+    padding-bottom: 0.75rem;
+
+    .booking-resume__detail:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .booking-resume__detail {
+      display: flex;
+      justify-content: space-between;
+      color: $gray-800;
+    }
+  }
+
+  .booking-resume__total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    color: $gray-800;
+
+    span {
+      &:nth-child(2) {
+        color: $body;
+        font-weight: 600;
+      }
+    }
+  }
+
+  small {
+    // font-size: 10px;
+    font-style: italic;
+    color: $gray-500;
+  }
+}

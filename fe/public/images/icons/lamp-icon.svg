@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lamp-icon">
+<g id="lamp-icon_2">
+<g id="Rectangle 15">
+<mask id="path-1-inside-1_42_479" fill="white">
+<path d="M13 39C13 37.3431 14.3431 36 16 36H32C33.6569 36 35 37.3431 35 39V43C35 43.5523 34.5523 44 34 44H14C13.4477 44 13 43.5523 13 43V39Z"/>
+</mask>
+<path d="M13 39C13 37.3431 14.3431 36 16 36H32C33.6569 36 35 37.3431 35 39V43C35 43.5523 34.5523 44 34 44H14C13.4477 44 13 43.5523 13 43V39Z" stroke="#1A1A40" stroke-width="6" mask="url(#path-1-inside-1_42_479)"/>
+</g>
+<path id="Vector 15 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M23 37V18H26V37H23Z" fill="#1A1A40"/>
+<path id="Rectangle 16" d="M18.584 5.5H29.416C29.648 5.5 29.8495 5.65962 29.9027 5.88548L32.9615 18.8855C33.0354 19.1993 32.7972 19.5 32.4748 19.5H15.5252C15.2028 19.5 14.9646 19.1993 15.0385 18.8855L18.0973 5.88548C18.1505 5.65962 18.352 5.5 18.584 5.5Z" stroke="#FC5134" stroke-width="3"/>
+</g>
+</g>
+</svg>

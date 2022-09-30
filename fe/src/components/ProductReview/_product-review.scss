@@ -1,0 +1,41 @@
+@import "../../assets/scss/color-variables";
+
+.product-review {
+  padding: 50px 0;
+  .image-preview {
+    margin-top: 0;
+
+    .image-preview__card-wrapper {
+      height: 544px;
+      width: 80%;
+      margin: 0 auto;
+
+      .image-preview__img-cover {
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .product-review__body {
+    .card-review {
+      border: none;
+
+      .card-body {
+        .card-body__rating {
+          span {
+            font-size: 1.125rem;
+          }
+        }
+
+        .card-body__content {
+          p {
+            &:first-child {
+              font-size: 1.5rem;
+              line-height: 2.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
