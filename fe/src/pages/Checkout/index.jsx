@@ -59,6 +59,7 @@ export default class Checkout extends Component {
             data={data}
             checkout={checkout}
             itemDetails={itemDetails}
+            dataState={dataState}
             changeHandler={this.changeHandler}
           />
         ),
@@ -86,7 +87,7 @@ export default class Checkout extends Component {
     return (
       <>
         <Header isCentered />
-        <Stepper steps={steps} initialStep="payment">
+        <Stepper steps={steps} initialStep="bookingInformation">
           {(prevStep, nextStep, currentStep, steps) => (
             <>
               <Numbering

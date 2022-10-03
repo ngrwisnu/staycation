@@ -7,7 +7,7 @@ const Stepper = (props) => {
   const stepsKeys = Object.keys(steps);
 
   const [currentStep, setCurrentStep] = useState(
-    stepsKeys.indexOf(initialStep) > -1 ? initialStep : stepsKeys[0]
+    stepsKeys.indexOf(initialStep) === 0 ? stepsKeys[0] : initialStep
   );
 
   const totalStep = stepsKeys.length;

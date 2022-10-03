@@ -61,7 +61,7 @@ const InputText = (props) => {
           className={["form-control", inputClassname].join(" ")}
           value={value}
           placeholder={placeholder}
-          onChange={changeHandler}
+          onChange={props.changeHandler}
         />
         {append && (
           <div className="input-group-append bg-gray-900">
@@ -85,8 +85,8 @@ InputText.defaultProps = {
 
 InputText.propTypes = {
   name: PropTypes.string.isRequired,
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-  changeHandler: PropTypes.func.isRequired,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  changeHandler: PropTypes.func,
   prepend: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   append: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   type: PropTypes.string,

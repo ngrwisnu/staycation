@@ -4,6 +4,7 @@ import "./_booking-information.scss";
 
 const BookingInformation = (props) => {
   const { data, itemDetails, dataState } = props;
+
   return (
     <div className="container">
       <div className="row">
@@ -17,8 +18,8 @@ const BookingInformation = (props) => {
           </div>
           <BookingResume
             price={itemDetails.price}
-            duration={dataState.duration}
-            endDate={dataState.date.endDate}
+            duration={dataState.data.duration}
+            endDate={dataState.data.date.endDate}
           />
         </div>
         <div className="col-5">
@@ -27,14 +28,14 @@ const BookingInformation = (props) => {
             id="firstName"
             name="firstName"
             value={data.firstName}
-            onChange={props.changeHandler}
+            changeHandler={props.changeHandler}
           />
           <label htmlFor="lastName">Last Name</label>
           <InputText
             id="lastName"
             name="lastName"
             value={data.lastName}
-            onChange={props.changeHandler}
+            changeHandler={props.changeHandler}
           />
           <label htmlFor="email">Email</label>
           <InputText
@@ -42,7 +43,7 @@ const BookingInformation = (props) => {
             name="email"
             type="email"
             value={data.email}
-            onChange={props.changeHandler}
+            changeHandler={props.changeHandler}
           />
           <label htmlFor="phone">Phone No.</label>
           <InputText
@@ -50,7 +51,7 @@ const BookingInformation = (props) => {
             name="phone"
             type="tel"
             value={data.phone}
-            onChange={props.changeHandler}
+            changeHandler={props.changeHandler}
           />
         </div>
       </div>
