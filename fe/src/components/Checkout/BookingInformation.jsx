@@ -6,7 +6,7 @@ const BookingInformation = (props) => {
   const { data, itemDetails, dataState } = props;
 
   return (
-    <div className="container mt-3">
+    <div className="container mt-4">
       <div className="row justify-content-center">
         <div className="col-5 booking-preview">
           <div className="checkout-card">
@@ -22,7 +22,7 @@ const BookingInformation = (props) => {
             endDate={dataState.data.date.endDate}
           />
         </div>
-        <div className="col-5">
+        <div className="col-5 booking-form">
           <label htmlFor="firstName">First Name</label>
           <InputText
             id="firstName"

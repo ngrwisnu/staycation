@@ -1,4 +1,4 @@
-import { BookingResume, InputFile } from "elements/Form";
+import { BookingResume, InputFile, InputText } from "elements/Form";
 import React from "react";
 import "./_payment.scss";
 
@@ -9,8 +9,8 @@ const Payment = (props) => {
   const { data, itemDetails, dataState } = props;
 
   return (
-    <div className="container">
-      <div className="row payment-details">
+    <div className="container mt-4">
+      <div className="row payment-details justify-content-center">
         <div className="col-5 payment-resume">
           <p>Payment transfer:</p>
           <BookingResume
@@ -44,9 +44,10 @@ const Payment = (props) => {
             </div>
           </div>
         </div>
-        <div className="col-5">
-          <label htmlFor="proofPayment"></label>
+        <div className="col-5 payment-form">
+          <label htmlFor="proofPayment">Transfer Receipt</label>
           <InputFile
+            type="file"
             accept="image/*"
             id="proofPayment"
             name="proofPayment"
@@ -54,7 +55,7 @@ const Payment = (props) => {
             changeHandler={props.changeHandler}
           />
           <label htmlFor="bankName">Customer's Bank</label>
-          <InputFile
+          <InputText
             id="bankName"
             name="bankName"
             type="text"
@@ -62,7 +63,7 @@ const Payment = (props) => {
             changeHandler={props.changeHandler}
           />
           <label htmlFor="bankHolder">Your name</label>
-          <InputFile
+          <InputText
             id="bankHolder"
             name="bankHolder"
             type="text"

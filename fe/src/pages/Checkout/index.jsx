@@ -148,7 +148,6 @@ export default class Checkout extends Component {
                       type="button"
                       isBlock
                       isSecondary
-                      hasShadow
                       onClick={nextStep}
                     >
                       Continue to Book
@@ -181,9 +180,8 @@ export default class Checkout extends Component {
                     className="btn"
                     type="link"
                     isBlock
-                    isPrimary
-                    hasShadow
-                    href=""
+                    isSecondary
+                    href="/"
                   >
                     Back to Home
                   </Button>

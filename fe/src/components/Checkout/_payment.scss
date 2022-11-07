@@ -1,0 +1,10 @@
+@import "../../assets/scss/color-variables";
+
+.payment-resume,
+.payment-form {
+  padding: 0 1rem;
+}
+
+.payment-resume {
+  border-right: 1px solid $gray-200;
+}

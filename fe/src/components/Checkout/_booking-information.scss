@@ -1,9 +1,14 @@
 @import "../../assets/scss/color-variables";
 
+.booking-preview,
+.booking-form {
+  padding: 0 1rem;
+}
+
 .booking-preview {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid $gray-400;
+  border-right: 1px solid $gray-200;
 
   .checkout-card {
     display: flex;
