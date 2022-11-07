@@ -15,7 +15,7 @@ const Hero = (props) => {
       <div className="video-bg">
         <video src={Video} autoPlay muted loop></video>
       </div>
-      <div className="row container mx-auto">
+      <div className="row container mx-auto hero__content">
         <div className="col">
           <div className="content">
             <h1 className="mb-0">

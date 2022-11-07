@@ -1,13 +1,14 @@
 import Button from "components/Button";
 import React from "react";
 import Logo from "../Logo";
+import "./_footer.scss";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container-fluid">
         <div className="row container mx-auto">
-          <div className="col">
+          <div className="col footer-logo">
             <Logo />
             <p className="logo-tagline">
               We create your beautiful holiday memorable

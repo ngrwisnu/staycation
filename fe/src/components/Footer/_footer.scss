@@ -1,7 +1,13 @@
+@import "../../assets/scss/color-variables";
+
 footer {
   color: $gray-800;
   border-top: 1px solid $gray-200;
   padding-top: 1.5rem;
+
+  .footer-logo {
+    align-items: flex-start;
+  }
 
   ul {
     padding: 0;

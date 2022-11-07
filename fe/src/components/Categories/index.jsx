@@ -11,7 +11,7 @@ const Categories = ({ categoryData }) => {
 
   return (
     <section id="category" className="container-fluid">
-      <div className="row container mx-auto">
+      <div className="row container mx-auto text-align-left">
         <div className="col">
           <Tabs
             categoryData={categoryData}
