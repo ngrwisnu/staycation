@@ -5,12 +5,20 @@
   flex-direction: column;
   border-right: 1px solid $gray-400;
 
-  .card {
+  .checkout-card {
     display: flex;
     flex-direction: column;
 
     .card__preview {
       height: 324px;
+      overflow: hidden;
+      border-radius: 0.5em;
+
+      img {
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+      }
     }
   }
 }

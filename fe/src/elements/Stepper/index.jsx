@@ -21,7 +21,11 @@ const Stepper = (props) => {
     if (+indexStep < totalStep) setCurrentStep(stepsKeys[indexStep + 1]);
   }
 
-  return <div>{props.children(prevStep, nextStep, currentStep, steps)}</div>;
+  return (
+    <div className="mt-3">
+      {props.children(prevStep, nextStep, currentStep, steps)}
+    </div>
+  );
 };
 
 export default Stepper;

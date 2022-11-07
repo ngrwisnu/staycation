@@ -103,25 +103,34 @@ export default class Checkout extends Component {
               {currentStep === "bookingInformation" && (
                 <Controller>
                   {data.firstName !== "" &&
-                    data.lastName !== "" &&
-                    data.email !== "" &&
-                    data.phone !== "" && (
-                      <Button
-                        className="btn mb-3"
-                        type="button"
-                        isBlock
-                        isPrimary
-                        hasShadow
-                        onClick={nextStep}
-                      >
-                        Continue to Book
-                      </Button>
-                    )}
+                  data.lastName !== "" &&
+                  data.email !== "" &&
+                  data.phone !== "" ? (
+                    <Button
+                      className="btn mb-3 checkout-btn"
+                      type="button"
+                      isBlock
+                      isSecondary
+                      onClick={nextStep}
+                    >
+                      Continue to Book
+                    </Button>
+                  ) : (
+                    <Button
+                      className="btn mb-3 checkout-btn"
+                      type="button"
+                      isBlock
+                      isDisable
+                    >
+                      Continue to Book
+                    </Button>
+                  )}
                   <Button
-                    className="btn"
+                    className="btn checkout-btn"
                     type="link"
                     isBlock
                     isLight
+                    isOutline
                     href={`/properties/${itemDetails._id}`}
                   >
                     Cancel
@@ -132,21 +141,30 @@ export default class Checkout extends Component {
               {currentStep === "payment" && (
                 <Controller>
                   {data.proofPayment !== "" &&
-                    data.bankName !== "" &&
-                    data.bankHolder !== "" && (
-                      <Button
-                        className="btn mb-3"
-                        type="button"
-                        isBlock
-                        isPrimary
-                        hasShadow
-                        onClick={nextStep}
-                      >
-                        Continue to Book
-                      </Button>
-                    )}
+                  data.bankName !== "" &&
+                  data.bankHolder !== "" ? (
+                    <Button
+                      className="btn mb-3 checkout-btn"
+                      type="button"
+                      isBlock
+                      isSecondary
+                      hasShadow
+                      onClick={nextStep}
+                    >
+                      Continue to Book
+                    </Button>
+                  ) : (
+                    <Button
+                      className="btn mb-3 checkout-btn"
+                      type="button"
+                      isBlock
+                      isDisable
+                    >
+                      Continue to Book
+                    </Button>
+                  )}
                   <Button
-                    className="btn"
+                    className="btn checkout-btn"
                     type="button"
                     isBlock
                     isLight

@@ -12,6 +12,9 @@ const Button = (props) => {
   props.isSmall && className.push("btn-sm");
   props.isBlock && className.push("btn-block");
   props.hasShadow && className.push("btn-shadow");
+  props.isDisable && className.push("btn-disabled");
+  props.isOutline && className.push("btn-outlined");
+  props.isSecondary && className.push("btn-secondary");
 
   const onClick = () => {
     props.onClick && props.onClick();
@@ -74,6 +77,9 @@ Button.propTypes = {
   href: PropTypes.string,
   className: PropTypes.string,
   isPrimaryBtn: PropTypes.bool,
+  isDisable: PropTypes.bool,
+  isOutline: PropTypes.bool,
+  isSecondary: PropTypes.bool,
   isLight: PropTypes.bool,
   isExternal: PropTypes.bool,
   isDisabled: PropTypes.bool,

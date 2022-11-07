@@ -6,12 +6,12 @@ const BookingInformation = (props) => {
   const { data, itemDetails, dataState } = props;
 
   return (
-    <div className="container">
-      <div className="row">
+    <div className="container mt-3">
+      <div className="row justify-content-center">
         <div className="col-5 booking-preview">
-          <div className="card">
+          <div className="checkout-card">
             <figure className="card__preview">
-              <img src={itemDetails.imageUrl} alt="" />
+              <img src={itemDetails.imageUrls[0].url} alt="Location preview" />
             </figure>
             <span className="card__name">{itemDetails.name}</span>
             <span className="card__location">{itemDetails.location}</span>
