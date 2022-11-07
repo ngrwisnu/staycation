@@ -42,7 +42,7 @@ export default class Checkout extends Component {
 
   render() {
     const { data } = this.state;
-    const { checkout, itemDetails, dataState, page } = this.props;
+    const { checkout, itemDetails, dataState } = this.props;
     // const dataState = {
     //   duration: 1,
     //   date: {

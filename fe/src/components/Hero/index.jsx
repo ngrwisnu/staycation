@@ -3,6 +3,7 @@ import React from "react";
 import FormatNumber from "utils/FormatNumber";
 
 // import assets
+import Video from "../../assets/videos/hero.mp4";
 
 const Hero = (props) => {
   // function showDestination() {
@@ -10,11 +11,11 @@ const Hero = (props) => {
   // }
 
   return (
-    <section
-      id="hero"
-      className="hero container-fluid pt-4 pb-4 vh-75 border border-danger"
-    >
-      <div className="row container mx-auto border border-dark position-relative">
+    <section id="hero" className="hero container-fluid vh-75">
+      <div className="video-bg">
+        <video src={Video} autoPlay muted loop></video>
+      </div>
+      <div className="row container mx-auto">
         <div className="col">
           <div className="content">
             <h1 className="mb-0">
