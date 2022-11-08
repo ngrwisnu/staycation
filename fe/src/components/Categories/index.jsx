@@ -1,6 +1,7 @@
 import Tabs from "components/Tabs";
 import TabsContent from "components/Tabs/TabsContent";
 import React, { useState } from "react";
+import "./_categories.scss";
 
 const Categories = ({ categoryData }) => {
   const [isDefault, setIsDefault] = useState("hotel");
@@ -11,7 +12,7 @@ const Categories = ({ categoryData }) => {
 
   return (
     <section id="category" className="container-fluid">
-      <div className="row container mx-auto text-align-left">
+      <div className="row container mx-auto">
         <div className="col">
           <Tabs
             categoryData={categoryData}

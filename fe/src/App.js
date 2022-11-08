@@ -13,6 +13,7 @@ import { useState } from "react";
 
 function App() {
   // Set up product details data for each product
+  // ! next useState will delete because the data will store to the redux
   const [bookData, setBookData] = useState({
     data: {
       duration: 1,
@@ -24,6 +25,7 @@ function App() {
     },
   });
 
+  // ! can be delete
   const bookDataHandler = (bookDuration) => {
     setBookData(bookDuration);
   };
@@ -40,7 +42,7 @@ function App() {
             path="/properties/:id"
             element={
               <ProductDetails
-                bookDataHandler={bookDataHandler}
+                bookDataHandler={bookDataHandler} // ! no need this props after the data store to the redux
                 itemDetails={data}
               />
             }
