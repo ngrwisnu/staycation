@@ -1,5 +1,5 @@
+import { configureStore } from "@reduxjs/toolkit";
 import orderReducer from "./slices/order";
-const { configureStore } = require("@reduxjs/toolkit");
 
 const store = configureStore({
   reducer: {

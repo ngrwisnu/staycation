@@ -5,26 +5,14 @@ import ProductActivities from "components/ProductActivities";
 import ProductReview from "components/ProductReview";
 import { Description, ImagePreview, Title } from "elements/ProductDetails";
 import React, { Component, Fragment } from "react";
-
-// import data from "../../data/itemDetailsData.json";
+import { connect } from "react-redux";
+import { updateOrder } from "../../redux/store/slices/order";
 
 class ProductDetails extends Component {
-  state = {
-    value: {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  };
-
   componentDidMount() {
     window.title = "Product Details";
     window.scrollTo(0, 0);
   }
-
-  changeHandler = (e) => {
-    this.setState({ value: e.target.value });
-  };
 
   render() {
     const { itemDetails, bookDataHandler } = this.props;
@@ -36,12 +24,13 @@ class ProductDetails extends Component {
         <main id="product-details" className="container">
           <div className="product-details__descriptions d-flex">
             <Description data={itemDetails} />
-            <form action="">
+            <div style={{ width: "100%" }}>
               <BookingForm
                 bookDataHandler={bookDataHandler}
                 itemDetails={itemDetails}
+                startBook={this.props.updateOrder}
               />
-            </form>
+            </div>
           </div>
           <ProductActivities data={itemDetails.activities} />
           <ProductReview data={itemDetails.testimonial} />
@@ -52,4 +41,6 @@ class ProductDetails extends Component {
   }
 }
 
-export default ProductDetails;
+const mapDispatchToProps = { updateOrder };
+
+export default connect(null, mapDispatchToProps)(ProductDetails);
