@@ -12,8 +12,10 @@ import Meta from "elements/Stepper/Meta";
 import MainContent from "elements/Stepper/MainContent";
 import Controller from "elements/Stepper/Controller";
 import Button from "components/Button";
+import { connect } from "react-redux";
+import { updateOrder } from "../../redux/store/slices/order";
 
-export default class Checkout extends Component {
+class Checkout extends Component {
   state = {
     data: {
       firstName: "",
@@ -42,13 +44,25 @@ export default class Checkout extends Component {
 
   render() {
     const { data } = this.state;
-    const { checkout, itemDetails, dataState } = this.props;
+    const { itemDetails, dataState, checkoutData } = this.props;
     // const dataState = {
     //   duration: 1,
     //   date: {
     //     endDate: new Date(),
     //   },
     // };
+
+    console.log(checkoutData);
+
+    if (!checkoutData) {
+      this.props.updateOrder({
+        duration: 1,
+        date: {
+          startDate: new Date(),
+          endDate: new Date(),
+        },
+      });
+    }
 
     const steps = {
       bookingInformation: {
@@ -57,7 +71,7 @@ export default class Checkout extends Component {
         content: (
           <BookingInformation
             data={data}
-            checkout={checkout}
+            checkout={checkoutData}
             itemDetails={itemDetails}
             dataState={dataState}
             changeHandler={this.changeHandler}
@@ -73,7 +87,7 @@ export default class Checkout extends Component {
             itemDetails={itemDetails}
             dataState={dataState}
             endDate={dataState}
-            checkout={checkout}
+            checkout={checkoutData}
             changeHandler={this.changeHandler}
           />
         ),
@@ -194,3 +208,13 @@ export default class Checkout extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    checkoutData: state.order,
+  };
+};
+
+const mapDispatchToProps = { updateOrder };
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);

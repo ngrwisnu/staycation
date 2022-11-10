@@ -17,7 +17,7 @@ const Payment = (props) => {
             price={itemDetails.price}
             duration={dataState.data.duration}
             endDate={dataState.data.date.endDate}
-            tax={50}
+            tax={10}
           />
           <div className="row">
             <div className="col-3 text-right">
