@@ -52,7 +52,7 @@ class Checkout extends Component {
     //   },
     // };
 
-    console.log(checkoutData);
+    console.log(dataState);
 
     if (!checkoutData) {
       this.props.updateOrder({

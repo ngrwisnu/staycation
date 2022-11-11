@@ -1,21 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useSelector } from "react-redux";
 import FormatNumber from "utils/FormatNumber";
 import "./_booking-resume.scss";
 
-const BookingResume = ({ price, tax }) => {
-  const order = useSelector((state) => state.order);
-
-  console.log(order);
-
-  const [currentDuration, setCurrentDuration] = useState(order.duration);
+const BookingResume = ({ price, duration, endDate, tax }) => {
+  const [currentDuration, setCurrentDuration] = useState(duration);
 
   useEffect(() => {
-    setCurrentDuration(order.duration - 1);
+    setCurrentDuration(duration - 1);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [order.date.endDate]);
+  }, [endDate]);
 
   const totalPrice = () => {
     if (currentDuration === 0) {

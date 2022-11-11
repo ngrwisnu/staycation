@@ -62,18 +62,18 @@ class BookingForm extends Component {
     }
   }
 
-  startBooking = () => {
-    const { data } = this.state;
+  // startBooking = () => {
+  //   const { data } = this.state;
 
-    this.props.startBook({
-      _id: this.props.itemDetails._id,
-      duration: data.duration,
-      date: {
-        startDate: data.date.startDate,
-        endDate: data.date.endDate,
-      },
-    });
-  };
+  //   this.props.startBook({
+  //     _id: this.props.itemDetails._id,
+  //     duration: data.duration,
+  //     date: {
+  //       startDate: data.date.startDate,
+  //       endDate: data.date.endDate,
+  //     },
+  //   });
+  // };
 
   render() {
     const { data } = this.state;
@@ -84,7 +84,6 @@ class BookingForm extends Component {
         itemDetails={itemDetails}
         dataState={data}
         updateDataHandler={this.updateData}
-        startBookingHandler={this.startBooking}
       />
     );
   }

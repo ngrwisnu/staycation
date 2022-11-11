@@ -1,16 +1,32 @@
 import Button from "components/Button";
 import { BookingResume, InputDate, InputGuest } from "elements/Form";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import FormatNumber from "utils/FormatNumber";
+import { updateOrder } from "../../redux/store/slices/order";
 
 import "./_card-booking.scss";
 
-const CardBooking = ({
-  itemDetails,
-  dataState,
-  updateDataHandler,
-  startBookingHandler,
-}) => {
+const CardBooking = ({ itemDetails, dataState, updateDataHandler }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const startBookingHandler = () => {
+    dispatch(
+      updateOrder({
+        _id: itemDetails._id,
+        duration: dataState.duration,
+        date: {
+          startDate: dataState.date.startDate,
+          endDate: dataState.date.endDate,
+        },
+      })
+    );
+
+    navigate("/checkout");
+  };
+
   return (
     <div className="col-5 card-booking">
       <div className="card-booking__header">

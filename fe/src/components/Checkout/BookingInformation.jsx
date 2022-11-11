@@ -18,8 +18,8 @@ const BookingInformation = (props) => {
           </div>
           <BookingResume
             price={itemDetails.price}
-            duration={dataState.data.duration}
-            endDate={dataState.data.date.endDate}
+            duration={dataState.duration}
+            endDate={dataState.date.endDate}
           />
         </div>
         <div className="col-5 booking-form">
