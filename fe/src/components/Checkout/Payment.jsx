@@ -15,8 +15,8 @@ const Payment = (props) => {
           <p>Payment transfer:</p>
           <BookingResume
             price={itemDetails.price}
-            duration={dataState.duration}
-            endDate={dataState.date.endDate}
+            duration={dataState.data.duration}
+            endDate={dataState.data.date.endDate}
             tax={10}
           />
           <div className="row">

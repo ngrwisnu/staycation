@@ -9,29 +9,26 @@ import Checkout from "pages/Checkout";
 
 // import product details json
 import data from "./data/itemDetailsData.json";
-// import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useState } from "react";
 
 function App() {
-  const bookData = useSelector((state) => state.order);
-
   // Set up product details data for each product
   // ! next useState will delete because the data will store to the redux
-  // const [bookData, setBookData] = useState({
-  //   data: {
-  //     duration: 1,
-  //     date: {
-  //       startDate: new Date(),
-  //       endDate: new Date(),
-  //       key: "selection",
-  //     },
-  //   },
-  // });
+  const [bookData, setBookData] = useState({
+    data: {
+      duration: 1,
+      date: {
+        startDate: new Date(),
+        endDate: new Date(),
+        key: "selection",
+      },
+    },
+  });
 
   // ! can be delete
-  // const bookDataHandler = (bookDuration) => {
-  //   setBookData(bookDuration);
-  // };
+  const bookDataHandler = (bookDuration) => {
+    setBookData(bookDuration);
+  };
 
   // console.log(bookData);
   // -------------------------------------------------
@@ -45,7 +42,7 @@ function App() {
             path="/properties/:id"
             element={
               <ProductDetails
-                //bookDataHandler={bookDataHandler} // ! no need this props after the data store to the redux
+                bookDataHandler={bookDataHandler} // ! no need this props after the data store to the redux
                 itemDetails={data}
               />
             }
