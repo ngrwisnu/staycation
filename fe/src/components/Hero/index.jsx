@@ -15,6 +15,7 @@ const Hero = (props) => {
       <div className="video-bg">
         <video src={Video} autoPlay muted loop></video>
       </div>
+      <span className="hero__overlay"></span>
       <div className="row container mx-auto hero__content">
         <div className="col">
           <div className="content">

@@ -42,7 +42,7 @@ function App() {
             path="/properties/:id"
             element={
               <ProductDetails
-                bookDataHandler={bookDataHandler} // ! no need this props after the data store to the redux
+                bookDataHandler={bookDataHandler}
                 itemDetails={data}
               />
             }

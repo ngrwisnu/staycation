@@ -1,9 +1,8 @@
 import { BookingResume, InputText } from "elements/Form";
-import React from "react";
 import "./_booking-information.scss";
 
 const BookingInformation = (props) => {
-  const { data, itemDetails, dataState } = props;
+  const { data, itemDetails, checkout } = props;
 
   return (
     <div className="container mt-4">
@@ -18,8 +17,8 @@ const BookingInformation = (props) => {
           </div>
           <BookingResume
             price={itemDetails.price}
-            duration={dataState.data.duration}
-            endDate={dataState.data.date.endDate}
+            duration={checkout.duration}
+            endDate={checkout.date.endDate}
           />
         </div>
         <div className="col-5 booking-form">

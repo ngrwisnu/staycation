@@ -6,7 +6,7 @@ import LogoAbc from "assets/images/bank-1.png";
 import LogoScb from "assets/images/bank-2.png";
 
 const Payment = (props) => {
-  const { data, itemDetails, dataState } = props;
+  const { data, itemDetails, checkout } = props;
 
   return (
     <div className="container mt-4">
@@ -15,8 +15,8 @@ const Payment = (props) => {
           <p>Payment transfer:</p>
           <BookingResume
             price={itemDetails.price}
-            duration={dataState.data.duration}
-            endDate={dataState.data.date.endDate}
+            duration={checkout.duration}
+            endDate={checkout.date.endDate}
             tax={10}
           />
           <div className="row">

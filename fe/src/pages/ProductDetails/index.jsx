@@ -5,8 +5,6 @@ import ProductActivities from "components/ProductActivities";
 import ProductReview from "components/ProductReview";
 import { Description, ImagePreview, Title } from "elements/ProductDetails";
 import React, { Component, Fragment } from "react";
-import { connect } from "react-redux";
-import { updateOrder } from "../../redux/store/slices/order";
 
 class ProductDetails extends Component {
   componentDidMount() {
@@ -41,6 +39,4 @@ class ProductDetails extends Component {
   }
 }
 
-const mapDispatchToProps = { updateOrder };
-
-export default connect(null, mapDispatchToProps)(ProductDetails);
+export default ProductDetails;
