@@ -17,17 +17,23 @@ test("Should render loading text / spinner", () => {
 });
 
 test("Should render tag <a> if the type is link and has props.isExternal", () => {
-  render(<Button type="link" isExternal></Button>);
-  const button = screen.getByRole("a");
+  render(
+    <Button type="link" isExternal href="/">
+      has props
+    </Button>
+  );
+  const button = screen.getByRole("link");
   expect(button).toBeInTheDocument();
 });
 
 test("Should render tag <Link> if the type is link and has no props.isExternal", () => {
   render(
     <Router>
-      <Button to="" type="link"></Button>
+      <Button to="/" type="link">
+        has no props
+      </Button>
     </Router>
   );
-  const button = screen.getByRole("button");
+  const button = screen.getByRole("link");
   expect(button).toBeInTheDocument();
 });
