@@ -1,24 +1,17 @@
-import CardReview from "components/CardReview";
 import React from "react";
+import StoryCarousel from "./Story";
 
 import "./_testimonials.scss";
 
 const Testimonials = ({ storiesData }) => {
   return (
-    <section id="testimonials" className="container-fluid">
+    <section id="stories" className="container-fluid">
       <div className="row container mx-auto">
-        <h3>Read their story</h3>
-        <div className="row testimonials">
-          {storiesData.map((review) => (
-            <CardReview
-              key={review._id}
-              id={review._id}
-              rate={review.rate}
-              content={review.content}
-              name={review.name}
-              occupation={review.occupation}
-            />
-          ))}
+        <h3>
+          Read Their <span>Experience</span>
+        </h3>
+        <div className="row stories">
+          <StoryCarousel stories={storiesData} />
         </div>
       </div>
     </section>

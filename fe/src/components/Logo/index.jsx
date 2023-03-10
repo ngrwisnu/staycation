@@ -1,13 +1,11 @@
 import Button from "components/Button";
 import React from "react";
 
-const Logo = () => {
+const Logo = (props) => {
+  const logoType = props.type === "white" ? "logo-white" : "logo";
   return (
     <Button className="brand-icon" href="" type="link">
-      <img
-        src={process.env.PUBLIC_URL + "/images/logo.png"}
-        alt="Staycation logo"
-      />
+      <img src={`/images/${logoType}.png`} alt="Staycation logo" />
     </Button>
   );
 };

@@ -1,6 +1,8 @@
 @import "../../assets/scss/color-variables";
 
 #category {
+  background-color: $gray-200;
+
   .col {
     align-items: flex-start;
   }

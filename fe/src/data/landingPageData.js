@@ -176,6 +176,32 @@ const data = {
       ],
     },
   ],
+  offers: [
+    {
+      id: "off1",
+      title: "Culinary Adventure at Our Best Restaurant",
+      description:
+        "Look no further than our best restaurant. Expert chefs, freshest ingredients, and innovative dishes that are sure to tantalize your taste. Get your story for a memorable meal, our restaurant is the perfect place to savor some of the most delicious cuisine around.",
+      image: "offer-restaurant",
+      small: "Golden Platinum Hotel",
+    },
+    {
+      id: "off2",
+      title: "Pamper Yourself in Our Luxurious Spa",
+      description:
+        "Treat yourself to some much-needed relaxation and rejuvenation in our luxurious spa. Our experienced therapists will let the stresses of daily life melt away as you sink into a state of blissful relaxation, leaving you feeling refreshed and renewed.",
+      image: "offer-spa",
+      small: "Long Lounge Hotel",
+    },
+    {
+      id: "off3",
+      title: "Step Inside Our Beautifully Designed Home Interior",
+      description:
+        "Find inspiration at every turn of the house with stylish decor and comfortable furnishings that are both visually stunning and supremely comfortable.",
+      image: "offer-interior",
+      small: "South Sunshine House",
+    },
+  ],
   testimonial: {
     _id: "asd1293uasdads1",
     imageUrl: "/images/testimonial-landingpages.jpg",
@@ -191,73 +217,41 @@ const data = {
       _id: "stry1",
       rate: 4.9,
       content:
-        "What a wonderful moment with my family and I will take another vacation soon",
-      name: "John Doe",
-      occupation: "Product Designer",
+        "My trip with this company was absolutely amazing! The tour guide was knowledgeable and entertaining, and the itinerary was perfect. I saw so many incredible sights and had some of the best experiences of my life. I highly recommend booking your next trip with them!",
+      name: "Alicia Doe",
+      comment: "Amazing holiday I ever had",
     },
     {
       _id: "stry2",
-      rate: 4.9,
+      rate: 5.0,
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus ut. ",
-      name: "Alisa Doe",
-      occupation: "Entrepeneur",
+        "I've traveled all over the world, and this was one of the best trips I've ever taken. The accommodations were top-notch, the food was delicious, and the activities were so much fun. I loved every minute of it!",
+      name: "Jenny Doe",
+      comment: "Can’t wait for another occasion!",
     },
     {
       _id: "stry3",
       rate: 4.9,
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I was hesitant to book a trip with a company I hadn't used before, but I'm so glad I did. The staff was incredibly helpful and accommodating, and the trip itself was unforgettable. I'll definitely be booking with them again in the future!",
       name: "Filly Doe",
-      occupation: "UX Designer",
+      comment: "Ready for the next one!",
     },
     {
       _id: "stry4",
-      rate: 4.9,
+      rate: 4.7,
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit amet justo donec. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit.",
+        "I can't say enough good things about this travel company. The tour was well-planned and executed flawlessly, and the guides were friendly, knowledgeable, and passionate about their work. I felt safe and well-cared for throughout the entire trip.",
       name: "Robert Doe",
-      occupation: "UX Researcher",
+      comment: "Do you have a voucher?",
     },
     {
       _id: "stry5",
       rate: 4.9,
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci",
+        "If you're looking for a unique and unforgettable travel experience, look no further. This company exceeded my expectations in every way, and I can't wait to book another trip with them in the future. Thank you for an amazing adventure!",
       name: "Belinda Doe",
-      occupation: "Product Designer",
-    },
-    {
-      _id: "stry6",
-      rate: 4.9,
-      content:
-        "In dictum tempor dolor, eu pharetra orci mollis non. Pellentesque leo lectus, placerat ut commodo ac, maximus malesuada metus.",
-      name: "Jason Doe",
-      occupation: "Web Developer",
-    },
-    {
-      _id: "stry7",
-      rate: 4.9,
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      name: "Jenny Doe",
-      occupation: "Product Designer",
-    },
-    {
-      _id: "stry8",
-      rate: 4.9,
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At erat pellentesque adipiscing commodo elit at.",
-      name: "Elissa Doe",
-      occupation: "Software Engineer",
-    },
-    {
-      _id: "stry9",
-      rate: 4.9,
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      name: "Dinda Doe",
-      occupation: "Software Developer",
+      comment: "Ready for test the other place!",
     },
   ],
 };

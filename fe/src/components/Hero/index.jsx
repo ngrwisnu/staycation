@@ -6,10 +6,6 @@ import FormatNumber from "utils/FormatNumber";
 import Video from "../../assets/videos/hero.mp4";
 
 const Hero = (props) => {
-  // function showDestination() {
-  //   window.scrollTo();
-  // }
-
   return (
     <section id="hero" className="hero container-fluid vh-75">
       <div className="video-bg">

@@ -8,7 +8,12 @@ const MostChosen = (props) => {
         <h3>Most Chosen</h3>
         {props.mostChosen.map((item, index) => {
           return (
-            <div key={index} className="col-4">
+            <div
+              key={index}
+              className="col-4"
+              data-aos="fade-up"
+              data-aos-delay={`${100 * index}`}
+            >
               <CardProduct
                 id={item._id}
                 image={item.imageUrl}

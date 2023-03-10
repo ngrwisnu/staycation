@@ -3,6 +3,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import Hero from "components/Hero";
 import MostChosen from "components/MostChosen";
+import Offers from "components/Offers";
 import Testimonials from "components/Testimonials";
 import data from "data/landingPageData";
 import React, { Fragment, useRef } from "react";
@@ -30,6 +31,7 @@ const LandingPage = () => {
       <main>
         <MostChosen targetRef={linkRef} mostChosen={data.mostChosen} />
         <Categories categoryData={data.categories} />
+        <Offers />
         <Testimonials storiesData={data.stories} />
       </main>
       <Footer />

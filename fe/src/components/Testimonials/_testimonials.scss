@@ -1,6 +1,28 @@
-#testimonials {
-  .testimonials {
+@import "../../assets/scss/color-variables";
+
+#stories {
+  .stories {
     display: flex;
     gap: 1.5rem;
+  }
+
+  h3 > span {
+    color: $main-purple;
+  }
+
+  .carousel-item__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 48px 0;
+  }
+
+  .carousel-indicators {
+    button {
+      background-color: $gray-200;
+
+      &.active {
+        background-color: $main-purple;
+      }
+    }
   }
 }

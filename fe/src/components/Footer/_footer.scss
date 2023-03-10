@@ -1,12 +1,16 @@
 @import "../../assets/scss/color-variables";
 
 footer {
-  color: $gray-800;
-  border-top: 1px solid $gray-200;
   padding-top: 1.5rem;
+  background-color: #11012d;
 
   .footer-logo {
     align-items: flex-start;
+    font-size: 1rem;
+
+    p {
+      color: #c5c5c5;
+    }
   }
 
   ul {
@@ -17,24 +21,28 @@ footer {
       list-style: none;
       margin-bottom: 12px;
 
+      a,
+      span {
+        color: #c5c5c5;
+      }
+
       a {
-        color: $gray-800;
         text-decoration: none;
       }
     }
   }
 
   h6 {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 2rem;
-    color: $body;
+    line-height: 21.6px;
+    color: $white;
   }
 
   .copyrights {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: $body;
+    font-size: 0.75rem;
+    line-height: 14.4px;
+    color: #a3a3a3;
     margin-top: 50px;
   }
 }

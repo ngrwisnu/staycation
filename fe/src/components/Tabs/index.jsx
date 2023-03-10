@@ -8,6 +8,7 @@ const Tabs = ({ categoryData, isDefault, setTabName }) => {
           <li className="nav-item" key={item._id}>
             <button
               className={`nav-link ${isDefault === item._id && "active"}`}
+              style={{ fontWeight: "500" }}
               id={`pills-${item._id}-tab`}
               data-bs-toggle="pills"
               data-bs-target={`#pills-${item._id}`}

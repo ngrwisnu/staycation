@@ -30,9 +30,6 @@ function App() {
     setBookData(bookDuration);
   };
 
-  // console.log(bookData);
-  // -------------------------------------------------
-
   return (
     <div className="App">
       <Router>

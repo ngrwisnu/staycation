@@ -1,6 +1,7 @@
 .card {
   border: none;
   position: relative;
+  border-radius: 1rem;
 
   .card__image {
     height: 450px;
@@ -10,11 +11,11 @@
 
     &.mini-image {
       height: 180px;
+      border-radius: 1rem 1rem 0 0;
     }
 
     img {
       object-fit: cover;
-      border-radius: inherit;
       height: 100%;
       width: 100%;
       transform: scale(1);

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="row container mx-auto">
           <div className="col footer-logo">
-            <Logo />
+            <Logo type="white" />
             <p className="logo-tagline">
               We create your beautiful holiday memorable
             </p>
