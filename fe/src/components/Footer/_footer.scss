@@ -28,6 +28,10 @@ footer {
 
       a {
         text-decoration: none;
+
+        &:hover {
+          color: $purple-surface;
+        }
       }
     }
   }

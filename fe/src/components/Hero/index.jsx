@@ -3,13 +3,18 @@ import React from "react";
 import FormatNumber from "utils/FormatNumber";
 
 // import assets
-import Video from "../../assets/videos/hero.mp4";
 
 const Hero = (props) => {
   return (
     <section id="hero" className="hero container-fluid vh-75">
       <div className="video-bg">
-        <video src={Video} autoPlay muted loop></video>
+        <video
+          src="/videos/hero.mp4"
+          poster="/images/poster.jpg"
+          autoPlay
+          muted
+          loop
+        ></video>
       </div>
       <span className="hero__overlay"></span>
       <div className="row container mx-auto hero__content">

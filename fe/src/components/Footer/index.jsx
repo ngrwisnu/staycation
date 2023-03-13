@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-2">
-            <h6>For beginners</h6>
+            <h6>Quick Guide</h6>
             <ul>
               <li>
                 <Button isExternal type="link" href="/register">
