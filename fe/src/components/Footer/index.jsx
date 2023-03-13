@@ -61,9 +61,9 @@ const Footer = () => {
                 <Button
                   isExternal
                   type="link"
-                  href="mailto:support@staycation.id"
+                  href="mailto:support@velcation.id"
                 >
-                  support@staycation.id
+                  support@velcation.id
                 </Button>
               </li>
               <li>
@@ -72,14 +72,14 @@ const Footer = () => {
                 </Button>
               </li>
               <li>
-                <span>staycation building, 2nd floor, Jakarta, Indonesia</span>
+                <span>velcation building, 2nd floor, Jakarta, Indonesia</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="row">
           <div className="col text-center copyrights">
-            Copyright &copy; 2022 Staycation. All right reserved.
+            Copyright &copy; 2022 Velcation. All right reserved.
           </div>
         </div>
       </div>

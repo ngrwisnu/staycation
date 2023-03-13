@@ -2,7 +2,7 @@ import { BookingResume, InputFile, InputText } from "elements/Form";
 import React from "react";
 import "./_payment.scss";
 
-import LogoAbc from "assets/images/bank-1.png";
+import LogoAcb from "assets/images/bank-1.png";
 import LogoScb from "assets/images/bank-2.png";
 
 const Payment = (props) => {
@@ -19,27 +19,28 @@ const Payment = (props) => {
             endDate={checkout.date.endDate}
             tax={10}
           />
-          <div className="row">
-            <div className="col-3 text-right">
-              <img src={LogoAbc} alt="Bank ABC" width="90" />
+          <p>Bank options:</p>
+          <div className="bank">
+            <div className="col-3 text-right bank__logo">
+              <img src={LogoAcb} alt="Bank ABC" width="56" />
             </div>
-            <div className="col">
+            <div className="bank__status">
               <dl>
-                <dd>ABC</dd>
+                <dd>ACB</dd>
                 <dd>2022 2202</dd>
-                <dd>Staycation Owner</dd>
+                <dd>Velcation Owner</dd>
               </dl>
             </div>
           </div>
-          <div className="row">
-            <div className="col-3 text-right">
-              <img src={LogoScb} alt="Staycation Central Bank" width="90" />
+          <div className="bank">
+            <div className="col-3 text-right bank__logo">
+              <img src={LogoScb} alt="Velcation Central Bank" width="56" />
             </div>
-            <div className="col">
+            <div className="bank__status">
               <dl>
-                <dd>Staycation Central Bank</dd>
+                <dd>Velcation Central Bank</dd>
                 <dd>2220 0022</dd>
-                <dd>Staycation Owner</dd>
+                <dd>Velcation Owner</dd>
               </dl>
             </div>
           </div>

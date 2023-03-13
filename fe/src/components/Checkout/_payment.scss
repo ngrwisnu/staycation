@@ -5,6 +5,33 @@
   padding: 0 1rem;
 }
 
+.bank {
+  display: flex;
+  gap: 1rem;
+
+  .bank__logo {
+    flex-basis: 50%;
+  }
+
+  .bank__status {
+    dl {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+    }
+  }
+}
+
 .payment-resume {
   border-right: 1px solid $gray-200;
+
+  p:first-child,
+  p:nth-child(3) {
+    font-weight: 500;
+  }
+
+  p:nth-child(3) {
+    margin-top: 16px;
+    padding-bottom: 8px;
+  }
 }
