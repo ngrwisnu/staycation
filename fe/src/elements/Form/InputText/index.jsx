@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 const InputText = (props) => {
@@ -12,39 +11,13 @@ const InputText = (props) => {
     append,
     wrapperClassname,
     inputClassname,
-    errorResponse,
   } = props;
 
-  const [hasError, setHasError] = useState(null);
+  const hasError = null;
 
   let pattern = "";
   if (type === "email") pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (type === "tel") pattern = /[0-9]*/;
-
-  const changeHandler = (e) => {
-    const target = {
-      target: {
-        name: name,
-        value: e.target.value,
-      },
-    };
-
-    if (type === "email") {
-      if (!pattern.test(e.target.value)) {
-        setHasError(errorResponse);
-      } else {
-        setHasError("");
-      }
-    }
-
-    if (type === "tel") {
-      if (e.target.validity.valid) {
-        props.changeHandler(target);
-      } else {
-        props.changeHandler(target);
-      }
-    }
-  };
 
   return (
     <div className={["input-text mb-3", wrapperClassname].join(" ")}>
